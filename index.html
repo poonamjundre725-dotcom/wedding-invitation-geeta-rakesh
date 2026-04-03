@@ -41,10 +41,10 @@
             100% { transform: scale(1); opacity: 0.8; }
         }
 
-        /* HERO TINT FIX (Prevents Gray Look) */
+        /* HERO TINT FIX */
         .hero {
             position: relative;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpeg') center/cover no-repeat fixed !important;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpeg') center/cover no-repeat fixed !important;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -62,14 +62,12 @@
 </head>
 <body>
 
-    <!-- 1. LUXURY PRE-LOADER -->
     <div id="loader">
         <div class="monogram-logo">
             <h2>G & R</h2>
         </div>
     </div>
 
-    <!-- 2. HERO SECTION -->
     <section class="hero">
         <div class="hero-content" data-aos="zoom-out">
             <div class="hero-crest">G & R</div>
@@ -80,52 +78,49 @@
         </div>
     </section>
 
-    <!-- 3. VIDEO INVITE -->
     <section class="section">
         <h2 class="title">Official Video Invite</h2>
         <div class="video-container" data-aos="fade-up">
-            <video controls poster="images/hero-bg.jpeg">
-                <source src="videos/invitation.mp4" type="video/mp4">
+            <video controls poster="hero-bg.jpeg">
+                <source src="https://drive.google.com/uc?export=download&id=1jjCXtmYhZtB2SuaA0_dSDTlMgV6xvTOs" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <p class="invite-note">Tap to play the special message</p>
     </section>
 
-    <!-- 4. CEREMONY GALLERY -->
     <section class="section invitation-gallery">
         <h2 class="title">Ceremony Invitations</h2>
         <div class="card-grid">
             <div class="invite-card-wrapper" data-aos="fade-up">
-                <img src="images/WhatsApp Image 2026-04-03 at 11.47.10.jpeg" alt="Engagement Invitation" class="invite-img">
+                <img src="WhatsApp Image 2026-04-03 at 11.47.10.jpeg" alt="Engagement Invitation" class="invite-img">
                 <div class="invite-overlay">
                     <h3>Engagement</h3>
                     <p>April 30, 2026</p>
-                    <a href="images/WhatsApp Image 2026-04-03 at 11.47.10.jpeg" download class="download-link">Download Card</a>
+                    <a href="WhatsApp Image 2026-04-03 at 11.47.10.jpeg" download class="download-link">Download Card</a>
                 </div>
             </div>
 
             <div class="invite-card-wrapper" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/Green Creative Mehndi Invitation.png" alt="Mehendi Invitation" class="invite-img">
+                <img src="Green Creative Mehndi Invitation.png" alt="Mehendi Invitation" class="invite-img">
                 <div class="invite-overlay">
                     <h3>Mehendi</h3>
                     <p>April 29, 2026</p>
-                    <a href="images/Green Creative Mehndi Invitation.png" download class="download-link">Download Card</a>
+                    <a href="Green Creative Mehndi Invitation.png" download class="download-link">Download Card</a>
                 </div>
             </div>
 
             <div class="invite-card-wrapper" data-aos="fade-up" data-aos-delay="200">
-                <img src="images/Purple and Cream Traditional Indian Haldi Invitation.png" alt="Haldi Invitation" class="invite-img">
+                <img src="Purple and Cream Traditional Indian Haldi Invitation.png" alt="Haldi Invitation" class="invite-img">
                 <div class="invite-overlay">
                     <h3>Haldi</h3>
                     <p>April 30, 2026</p>
-                    <a href="images/Purple and Cream Traditional Indian Haldi Invitation.png" download class="download-link">Download Card</a>
+                    <a href="Purple and Cream Traditional Indian Haldi Invitation.png" download class="download-link">Download Card</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. VENUE SECTION (QR CODE ADDED HERE) -->
     <section class="section venue-section">
         <h2 class="title">The Grand Wedding Venue</h2>
         <div class="event-card wedding-main" data-aos="zoom-in">
@@ -134,27 +129,25 @@
             <p><b>May 01, 2026 | 07:00 PM Onwards</b></p>
             <p>Daivat Lawns, waghacha akhada</p>
             <div class="qr-wrapper">
-                <img src="images/venue-qr.png" alt="Venue Location QR" class="qr-code">
+                <img src="venue-qr.png" alt="Venue Location QR" class="qr-code">
             </div>
             <p class="qr-label">Scan for Google Maps Navigation</p>
         </div>
     </section>
 
-    <!-- 6. JOURNEY SECTION -->
     <section class="section">
         <h2 class="title">Our Journey</h2>
         <div class="gallery">
-            <img src="images/Sister_Childhood.jpeg" data-aos="flip-left" alt="Memory Photo 1">
-            <video src="videos/IMG_7114.MP4" data-aos="flip-right" controls style="width:100%; max-width:400px; border-radius:10px;"></video>
+            <img src="Sister_Childhood.jpeg" data-aos="flip-left" alt="Memory Photo 1">
+            <video src="https://drive.google.com/uc?export=download&id=1F223GOtbJqYs7L7P81720NQl_BtYiBef" data-aos="flip-right" controls style="width:100%; max-width:400px; border-radius:10px;"></video>
         </div>
     </section>
 
-    <!-- 7. WISHES SECTION -->
     <section class="section wishes-section">
         <h2 class="title">Blessings & Wishes</h2>
         <div class="wish-form">
             <input type="text" id="guestName" placeholder="Your Full Name">
-            <textarea id="guestMsg" placeholder="Write your heartfelt blessing for Geeta & Rakesh..."></textarea>
+            <textarea id="guestMsg" placeholder="Write your heartfelt blessing..."></textarea>
             <button onclick="postWish()" class="btn-gold">Post Blessing</button>
         </div>
         <div id="wishDisplay" class="wish-container"></div>
